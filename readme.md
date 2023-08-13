@@ -45,7 +45,7 @@ The application **Content** can be accessed on my [GitHub Repository](https://gi
 
 ## Usage
 
-Users may utilize this app to create new users with a valid username and email address, add other users as friends, delete those friends, post thoughts, reactions to those thoughts, and update and delete both thoughts and reactions.
+Users may utilize this app to create a new user with a valid username and email address, add other users as friends, delete those friends, post thoughts, reactions to those thoughts, and update and delete both thoughts and reactions.
 
  ## Technologies
   * JavaScript
