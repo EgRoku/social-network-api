@@ -17,3 +17,5 @@ router.route('/api/users/:userId').get(getSingleUser).put(updateUser).delete(del
 
 // route for getting friends by id as well as the add and delete friend options  /:userId/friends/:friendId
 router.route('/:userId/friends/:friendId').post(addFriend).delete(removeFriend);
+
+module.exports = router;

@@ -100,24 +100,24 @@ const thoughtController = {
         });
     },
 
-// Add a reaction to a thought
-    addreaction(req, res) {
+  // Add a reaction to a thought
+  addReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
       { $addToSet: { reactions: req.body } },
-      {runValidators: true, new: true }  
+      { runValidators: true, new: true }
     )
-        .then((dbThoughtData) => {
-            if (!dbThoughtData) {
-                return res.status(404).json({ message: 'No thought for this Id!'});
-            }
-            res.json(dbThoughtData);
-        })
-        .catch((err) => {
-            console.log(err);
-            res.status(500).json(err);
-          });
-    },
+      .then((dbThoughtData) => {
+        if (!dbThoughtData) {
+          return res.status(404).json({ message: 'No thought for this Id!' });
+        }
+        res.json(dbThoughtData);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  },
 
 // Remove a reaction from a thought
     removeReaction(req, res) {
