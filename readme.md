@@ -16,7 +16,7 @@ This App is an API for a social network web application where users can share th
 
 To see how the API works using Insomnia, see the **Walkthrough Video Below**:
 
-*
+* https://youtu.be/V8AWqtjCkKY
 
 The application **Content** can be accessed on my [GitHub Repository](https://github.com/EgRoku/social-network-api).
 
